@@ -8,7 +8,9 @@ $query = $db->prepare("SELECT `id`, `album_name`, `artist_name`, `year`, `record
 $query ->execute([]);
 
 $record_collection = $query->fetchAll();
+?>
 
-echo "<pre>";
-var_dump($record_collection);
-echo "</pre>";
+<head>
+    <title>My Record Collection</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
