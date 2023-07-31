@@ -6,3 +6,38 @@ html {
 	font-size: 10px;
 	font-family: verdana, sans-serif;
 }
+
+body {
+    background-color: #4D7ABE;
+    margin: 0;
+}
+
+.heading {
+    background-color: #E06363;
+    padding: 10px;
+}
+.heading h1 {
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    background-color: #53A5C9;
+    max-width: 200px;
+}
+
+.card-banner-container {
+    background-color: #2E66D1;
+    padding: 5px;
+}
+
+.card-stat-container {
+    padding: 5px;
+}
+
