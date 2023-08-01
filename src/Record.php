@@ -17,7 +17,7 @@ class Record {
         $this->number_of_tracks = $number_of_tracks;
     }
 
-    public function create_record_card() 
+    public function create_record_card(): string 
     {
         return 
             "<div class='card'>
