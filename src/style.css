@@ -17,7 +17,7 @@ body {
     padding: 10px;
 }
 .heading h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .card-container {
@@ -29,8 +29,8 @@ body {
 
 .card {
     background-color: #53A5C9;
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 350px;
+    max-width: 350px;
     margin: 20px;
 
 }
@@ -43,9 +43,10 @@ body {
 }
 
 .card-heading {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .card-stat-container {
     padding: 5px;
+    font-size: 1.5rem;
 }
