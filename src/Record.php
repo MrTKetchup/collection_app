@@ -17,19 +17,19 @@ class Record {
         $this->number_of_tracks = $number_of_tracks;
     }
 
-    public function create_record_card($album_name, $artist_name, $year, $record_label, $number_of_tracks) 
+    public function create_record_card() 
     {
         return 
             "<div class='card'>
-                <div class='card-banner-container'>
-                <h2 class='card-heading'>" . $album_name . "</h2>
-            </div>
-            <div class='card-stat-container'>
-            <p class='card-stat'>Artist: " . $artist_name . "</p>
-            <p class='card-stat'>Year: " . $year . "</p>
-            <p class='card-stat'>Record label: " . $record_label . "</p>
-            <p class='card-stat'>Number of Tracks: " . $number_of_tracks . "</p>
-        </div>
-    </div>"
+                    <div class='card-banner-container'>
+                    <h2 class='card-heading'>" . $this->album_name . "</h2>
+                </div>
+                <div class='card-stat-container'>
+                    <p class='card-stat'>Artist: " . $this->artist_name . "</p>
+                    <p class='card-stat'>Year: " . $this->year . "</p>
+                    <p class='card-stat'>Record label: " . $this->record_label . "</p>
+                    <p class='card-stat'>Number of Tracks: " . $this->number_of_tracks . "</p>
+                </div>
+            </div>";
     }
 }
