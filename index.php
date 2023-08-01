@@ -12,7 +12,7 @@ $record_collection = $query->fetchAll();
 
 <head>
     <title>My Record Collection</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 <body>
     <section class = "heading">
