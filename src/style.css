@@ -29,15 +29,23 @@ body {
 
 .card {
     background-color: #53A5C9;
+    min-width: 200px;
     max-width: 200px;
+    margin: 20px;
+
 }
 
 .card-banner-container {
+    display: flex;
+    flex-wrap: nowrap;
     background-color: #2E66D1;
     padding: 5px;
+}
+
+.card-heading {
+    font-size: 1.2rem;
 }
 
 .card-stat-container {
     padding: 5px;
 }
-

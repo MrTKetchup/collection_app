@@ -10,9 +10,6 @@ $query ->execute([]);
 require_once('src/Record.php');
 
 $record_collection = $query->fetchAll();
-echo "<pre>";
-var_dump($record_collection);
-echo "</pre>";
 ?>
 
 <head>
@@ -25,27 +22,11 @@ echo "</pre>";
     </section>
     <section class = 'card-container'>
         <?php
-        foreach ($record_collection as $record) {
-            $record = new Record ($record['album_name'], $record['artist_name'], $record['year'], $record['record_label'], $record['number_of_tracks']);
-            // echo "<pre>";
-            // var_dump($record);
-            // echo "</pre>";
+            foreach ($record_collection as $record) {
+                $record = new Record ($record['album_name'], $record['artist_name'], $record['year'], $record['record_label'], $record['number_of_tracks']);
 
-
-            echo ($record->create_record_card());
-
-        }
-        // <div class='card'>
-        //     <div class='card-banner-container'>
-        //         <h2 class='card-heading'>album-title</h2>
-        //     </div>
-        //     <div class='card-stat-container'>
-        //         <p class='card-stat'>artist: artist-name</p>
-        //         <p class='card-stat'>year: year</p>
-        //         <p class='card-stat'>record-label: record-label</p>
-        //         <p class='card-stat'>number-of-tracks: track-number</p>
-        //     </div>
-        // </div>
+                echo ($record->create_record_card());
+            }
         ?>
     </section>
 </body>
