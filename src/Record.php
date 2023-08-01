@@ -2,11 +2,11 @@
 
 class Record {
 
-    public string $album_name;
-    public string $artist_name;
-    public int $year;
-    public string $record_label;
-    public int $number_of_tracks;
+    private string $album_name;
+    private string $artist_name;
+    private int $year;
+    private string $record_label;
+    private int $number_of_tracks;
 
     public function __construct(string $album_name, string $artist_name, int $year, string $record_label, int $number_of_tracks) 
     {
@@ -22,13 +22,13 @@ class Record {
         return 
             "<div class='card'>
                     <div class='card-banner-container'>
-                    <h2 class='card-heading'>" . $this->album_name . "</h2>
+                    <h2 class='card-heading'> $this->album_name </h2>
                 </div>
                 <div class='card-stat-container'>
-                    <p class='card-stat'>Artist: " . $this->artist_name . "</p>
-                    <p class='card-stat'>Year: " . $this->year . "</p>
-                    <p class='card-stat'>Record label: " . $this->record_label . "</p>
-                    <p class='card-stat'>Number of Tracks: " . $this->number_of_tracks . "</p>
+                    <p class='card-stat'>Artist: $this->artist_name </p>
+                    <p class='card-stat'>Year: $this->year </p>
+                    <p class='card-stat'>Record label: $this->record_label </p>
+                    <p class='card-stat'>Number of Tracks: $this->number_of_tracks </p>
                 </div>
             </div>";
     }

@@ -11,22 +11,23 @@ require_once('src/Record.php');
 
 $record_collection = $query->fetchAll();
 ?>
+<html lang = "en-GB">
+    <head>
+        <title>My Record Collection</title>
+        <link rel='stylesheet' type='text/css' href='src/style.css'>
+    </head>
+    <body>
+        <section class = 'heading'>
+            <h1>My Record Collection</h1>
+        </section>
+        <section class = 'card-container'>
+            <?php
+                foreach ($record_collection as $record) {
+                    $record = new Record ($record['album_name'], $record['artist_name'], $record['year'], $record['record_label'], $record['number_of_tracks']);
 
-<head>
-    <title>My Record Collection</title>
-    <link rel='stylesheet' type='text/css' href='src/style.css'>
-</head>
-<body>
-    <section class = 'heading'>
-        <h1>My Record Collection</h1>
-    </section>
-    <section class = 'card-container'>
-        <?php
-            foreach ($record_collection as $record) {
-                $record = new Record ($record['album_name'], $record['artist_name'], $record['year'], $record['record_label'], $record['number_of_tracks']);
-
-                echo ($record->create_record_card());
-            }
-        ?>
-    </section>
-</body>
+                    echo ($record->create_record_card());
+                }
+            ?>
+        </section>
+    </body>
+</html>
