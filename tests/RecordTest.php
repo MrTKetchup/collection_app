@@ -18,7 +18,7 @@ class RecordTest extends TestCase {
         
         $expectedOutput = 
             "<div class='card'>
-                    <div class='card-banner-container'>
+                <div class='card-banner-container'>
                     <h2 class='card-heading'> foo </h2>
                 </div>
                 <div class='card-stat-container'>

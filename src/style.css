@@ -25,6 +25,24 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
+    
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 5px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .card {
@@ -32,14 +50,6 @@ body {
     min-width: 350px;
     max-width: 350px;
     margin: 20px;
-
-}
-
-.card-banner-container {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #2E66D1;
-    padding: 5px;
 }
 
 .card-heading {
@@ -47,6 +57,14 @@ body {
 }
 
 .card-stat-container {
+    background-color: orange;
     padding: 5px;
     font-size: 1.5rem;
+    color: white;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.card-stat {
+    color: red;
 }

@@ -28,6 +28,20 @@ $record_collection = $query->fetchAll();
                     echo ($record->create_record_card());
                 }
             ?>
+            <div class = 'circle'>
+                <div class='card'>
+                    <!-- <div class='card-banner-container'>
+                        
+                    </div> -->
+                    <div class='card-stat-container'>
+                        <h2 class='card-heading'> $this->album_name </h2>
+                        <p class='card-stat'>Artist: $this->artist_name </p>
+                        <p class='card-stat'>Year: $this->year </p>
+                        <p class='card-stat'>Record label: $this->record_label </p>
+                        <p class='card-stat'>Number of Tracks: $this->number_of_tracks </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>
