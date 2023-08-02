@@ -20,7 +20,7 @@ class RecordTest extends TestCase {
             "<div class = 'circle'>
                 <div class = 'card'>
                     <div class = 'card-stat-container'>
-                        <h2 class = 'card-stat'> foo </h2>
+                        <h2 class = 'card-heading'> foo </h2>
                         <p class = 'card-stat'>Artist: bar </p>
                         <p class = 'card-stat'>Year: 1970 </p>
                         <p class = 'card-stat'>Record label:</p>

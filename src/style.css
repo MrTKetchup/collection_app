@@ -60,7 +60,6 @@ header h1 {
     align-items: center;
     flex-wrap: wrap;
     background-color: #f47527;
-    font-size: 1.2rem;
     color: black;
 }
 
@@ -86,6 +85,10 @@ header h1 {
         min-width: 350px;
         max-width: 350px;
         margin: 20px;
+    }
+
+    .card-stat-container {
+        font-size: 1.5rem;
     }
 
     .card-heading {
