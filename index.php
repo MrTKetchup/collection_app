@@ -24,7 +24,6 @@ $record_collection = $query->fetchAll();
             <?php
                 foreach ($record_collection as $record) {
                     $record = new Record ($record['album_name'], $record['artist_name'], $record['year'], $record['record_label'], $record['number_of_tracks']);
-
                     echo ($record->create_record_card());
                 }
             ?>

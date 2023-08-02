@@ -18,15 +18,13 @@ class RecordTest extends TestCase {
         
         $expectedOutput = 
             "<div class = 'circle'>
-                <div class = 'card'>
-                    <div class = 'card-stat-container'>
-                        <h2 class = 'card-heading'> foo </h2>
-                        <p class = 'card-stat'>Artist: bar </p>
-                        <p class = 'card-stat'>Year: 1970 </p>
-                        <p class = 'card-stat'>Record label:</p>
-                        <p class = 'card-stat'> zoo </p>
-                        <p class = 'card-stat'>Number of Tracks: 42 </p>
-                    </div>
+                <div class = 'card-stat-container'>
+                    <h2> foo </h2>
+                    <p class = 'card-stat'>Artist: bar </p>
+                    <p class = 'card-stat'>Year: 1970 </p>
+                    <p class = 'card-stat'>Record label:</p>
+                    <p class = 'card-stat'> zoo </p>
+                    <p class = 'card-stat'>Number of Tracks: 42 </p>
                 </div>
             </div>";
         $actualOutput = $testRecord->create_record_card();

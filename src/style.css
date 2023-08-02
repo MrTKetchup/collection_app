@@ -32,7 +32,7 @@ header h1 {
 
 .circle {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     border: solid 1px black;
@@ -48,22 +48,17 @@ header h1 {
     top: 100px;
 }
 
-.card {
-    background-color: #53A5C9;
+.card-stat-container {
     width: 200px;
     margin: 20px;
-}
-
-.card-stat-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     background-color: #f47527;
-    color: black;
 }
 
-.card-heading {
+h2 {
     font-size: 1.8rem;
 }
 
@@ -80,18 +75,13 @@ header h1 {
         top: 100px;
     }
 
-    .card {
-        background-color: #53A5C9;
-        min-width: 350px;
-        max-width: 350px;
+    .card-stat-container {
+        font-size: 1.5rem;
+        min-width: 300px;
         margin: 20px;
     }
 
-    .card-stat-container {
-        font-size: 1.5rem;
-    }
-
-    .card-heading {
+    h2 {
         font-size: 2rem;
     }
 
