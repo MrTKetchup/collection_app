@@ -30,9 +30,6 @@ $record_collection = $query->fetchAll();
             ?>
             <div class = 'circle'>
                 <div class='card'>
-                    <!-- <div class='card-banner-container'>
-                        
-                    </div> -->
                     <div class='card-stat-container'>
                         <h2 class='card-heading'> $this->album_name </h2>
                         <p class='card-stat'>Artist: $this->artist_name </p>
