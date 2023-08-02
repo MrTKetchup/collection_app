@@ -12,13 +12,14 @@ body {
     margin: 0;
 }
 
-.heading {
+header {
     background-color: #E06363;
     padding: 10px;
     position: fixed;
     top: 0;
+    width: 100%;
 }
-.heading h1 {
+header h1 {
     font-size: 2.5rem;
 }
 
@@ -35,8 +36,8 @@ body {
     justify-content: center;
     align-items: center;
     border: solid 1px black;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-color: black;
     margin: 40px;
@@ -50,13 +51,9 @@ body {
 
 .card {
     background-color: #53A5C9;
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 100px;
+    max-width: 100px;
     margin: 20px;
-}
-
-.card-stat h2 {
-    font-size: 1.8rem;
 }
 
 .card-stat-container {
@@ -65,17 +62,45 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-color: orange;
-    padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
-    min-width: 300px;
-    max-width: 300px;
+    border: red solid 1px;
+}
+
+.card-heading {
+    font-size: 1.8rem;
 }
 
 .card-stat {
-    max-width: 250px;
+    max-width: 150px;
+    border: solid black 1px;
 }
 
 @media screen and (min-width:600px) {
+    .circle {
+        width: 500px;
+        height: 500px;
+        margin: 40px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+        position: sticky;
+        top: 100px;
+    }
 
+    .card {
+        background-color: #53A5C9;
+        min-width: 350px;
+        max-width: 350px;
+        margin: 20px;
+    }
+
+    .card-heading {
+        font-size: 2rem;
+    }
+
+    .card-stat {
+        max-width: 250px;
+    }
 }
