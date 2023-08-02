@@ -2,33 +2,33 @@
 
 class Record {
 
-    private string $album_name;
-    private string $artist_name;
+    private string $albumName;
+    private string $artistName;
     private int $year;
-    private string $record_label;
-    private int $number_of_tracks;
+    private string $recordLabel;
+    private int $numberOfTracks;
 
-    public function __construct(string $album_name, string $artist_name, int $year, string $record_label, int $number_of_tracks) 
+    public function __construct(string $albumName, string $artistName, int $year, string $recordLabel, int $numberOfTracks) 
     {
-        $this->album_name = $album_name;
-        $this->artist_name = $artist_name;
+        $this->albumName = $albumName;
+        $this->artistName = $artistName;
         $this->year = $year;
-        $this->record_label = $record_label;
-        $this->number_of_tracks = $number_of_tracks;
+        $this->recordLabel = $recordLabel;
+        $this->numberOfTracks = $numberOfTracks;
     }
 
-    public function create_record_card(): string 
+    public function createRecordCard(): string 
     {
         return 
-            "<div class = 'circle'>
-                <div class = 'card-stat-container'>
-                    <h2> $this->album_name </h2>
-                    <p class = 'card-stat'>Artist: $this->artist_name </p>
-                    <p class = 'card-stat'>Year: $this->year </p>
-                    <p class = 'card-stat'>Record label:</p>
-                    <p class = 'card-stat'> $this->record_label </p>
-                    <p class = 'card-stat'>Number of Tracks: $this->number_of_tracks </p>
+            '<div class="circle">
+                <div class="card-stat-container">
+                    <h2>' . $this->albumName . '</h2>
+                    <p class="card-stat">Artist: ' . $this->artistName . '</p>
+                    <p class="card-stat">Year: ' . $this->year . '</p>
+                    <p class="card-stat">Record label:</p>
+                    <p class="card-stat">' . $this->recordLabel . '</p>
+                    <p class="card-stat">Number of Tracks: ' . $this->numberOfTracks . '</p>
                 </div>
-            </div>";
+            </div>';
     }
 }
