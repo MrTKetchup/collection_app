@@ -34,7 +34,6 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
     width: 350px;
     height: 350px;
     border-radius: 50%;
