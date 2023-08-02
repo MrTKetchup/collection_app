@@ -4,7 +4,7 @@
 
 html {
 	font-size: 10px;
-	font-family: verdana, sans-serif;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -12,12 +12,15 @@ body {
     margin: 0;
 }
 
-.heading {
+header {
     background-color: #E06363;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-.heading h1 {
-    font-size: 2rem;
+header h1 {
+    font-size: 2.5rem;
 }
 
 .card-container {
@@ -27,25 +30,62 @@ body {
     padding: 10px;
 }
 
-.card {
-    background-color: #53A5C9;
-    min-width: 200px;
-    max-width: 200px;
-    margin: 20px;
-
-}
-
-.card-banner-container {
+.circle {
     display: flex;
-    flex-wrap: nowrap;
-    background-color: #2E66D1;
-    padding: 5px;
-}
-
-.card-heading {
-    font-size: 1.2rem;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 100px;
 }
 
 .card-stat-container {
-    padding: 5px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f47527;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.card-stat {
+    max-width: 150px;
+}
+
+@media screen and (min-width:600px) {
+    .circle {
+        width: 500px;
+        height: 500px;
+        margin: 40px;
+        position: sticky;
+        top: 100px;
+    }
+
+    .card-stat-container {
+        font-size: 1.5rem;
+        min-width: 300px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card-stat {
+        max-width: 250px;
+    }
 }
